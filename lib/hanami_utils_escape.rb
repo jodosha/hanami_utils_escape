@@ -1,3 +1,11 @@
+require "helix_runtime"
+
+begin
+  require "hanami_utils_escape/native"
+rescue LoadError
+  warn "Unable to load hanami_utils_escape/native. Please run `rake build`"
+end
+
 class HanamiUtilsEscape
   require "hanami_utils_escape/version"
 
