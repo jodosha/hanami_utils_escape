@@ -46,7 +46,7 @@ class HanamiUtilsEscape
   # @example Bad practice
   #   # WRONG Use Escape.html_attribute instead
   #   <a title="<%= Hanami::Utils::Escape.html('...') %>">link</a>
-  def self.html(input)
+  def self.html_ruby(input)
     input  = encode(input)
     result = ""
 
